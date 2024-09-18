@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="todo.css">
+    
+</head>
+<body>
+    <div>
+        <form id="todoForm" action="">
+            <label for="name">Item Name</label><br>
+            <input type="text" id="itemName" placeholder="Enter Item Name">
+            <br><br>
+            <label for="Qty">Quantity</label><br>
+            <input type="number" id="qty" placeholder="Enter the quantity">
+            <br><br>
+            <label for="priority">priority</label><br>
+            <select name="" id="priority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <br>
+            <input type="submit">
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Item Name</td>
+                    <td>Quantity</td>
+                <td>priority</td>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <!-- Adding tbody from .js file -->
+                
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
+
+<script src="Todo.js"></script>
