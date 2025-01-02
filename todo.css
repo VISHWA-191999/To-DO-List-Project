@@ -1,74 +1,105 @@
-div{
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #000; /* Black background */
+    color: #fff;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-around;
-}
-label {
-  font-size: large;
-  font-weight: bold;
-}
-input {
-    height: 25px;
-    width: 200px;
-    border-width: 5px;
-    border-color: aqua;
-    margin-top: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-#priority{
-    height: 25px;
-    width: 150px;
-    /* line-height: 15px; */
-    margin: 10px 0px 10px;
-    padding: 0px;
-    /* border-width: 10px ; */
-}
-#todoForm{
-    background-color: lightcoral;
-    margin-top: 100px;
-    width: 30%;
-    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-table{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 60%;
-    margin: auto;
-    margin-top: 100px;
-    text-align: center;
-    background-color: aqua;
-    border-collapse: collapse;
+/* Flex Container */
+div {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
 }
 
-table td, table th{
-    border: 1px solid #ddd;
-    padding:8px;
-    text-align: center;
-
-}
-table tr:hover{
-    background-color: #ddd;
-}
-table thead{
-    padding: 12px;
-    text-align: left;
-    background-color: #04aa6d;
-    color: white;
-    text-align: center;
-
+/* Form Styling */
+form {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    width: 40%;
 }
 
-*{
-    box-sizing: border-box;
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #eaeaea;
 }
-input[type="submit"]{
-    padding: 12px;
-    padding-bottom: 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+
+form input,
+form select {
     width: 100%;
-    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: #333;
+    color: white;
+}
 
+form input[type="submit"] {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+thead {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+thead td {
+    padding: 10px;
+}
+
+tbody tr {
+    transition: background 0.3s ease;
+}
+
+tbody tr:nth-child(odd) {
+    background: #333;
+}
+
+tbody tr:hover {
+    background: #444;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+/* Table Container */
+table {
+    width: 60%; /* Takes the remaining space */
 }
